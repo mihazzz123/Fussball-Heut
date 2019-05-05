@@ -750,7 +750,7 @@ _
   font-family: Thirsty Script Bold;
   color: #0f0f0f;
   display: block;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 100px auto;
   text-align: center;
   font-size: 58px;
   width: 80%;
@@ -825,9 +825,6 @@ _
 }
 
 @media (max-width: 990px) {
-  .main {
-    background-position: left center;
-  }
   .main-wrap {
     bottom: 0;
   }
@@ -857,8 +854,8 @@ _
 }
 
 @media (max-width: 786px) {
-  .main {
-    background-size: 100%;
+  .main__title {
+    font-size: 42px;
   }
   .main-wrap {
     margin: 0 auto;
@@ -873,8 +870,8 @@ _
 }
 
 @media (max-width: 546px) {
-  .main {
-    background-image: none;
+  .main__title {
+    font-size: 34px;
   }
 }
 
@@ -942,6 +939,16 @@ _
   .offer-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 546px) {
+  .offerr-item__text {
+    font-size: 20px;
+  }
+  .offerr-item__text i {
+    font-size: 24px;
   }
 }
 
@@ -1161,8 +1168,24 @@ iframe {
 }
 
 @media (max-width: 990px) {
+  padding: 15px;
+}
+
+@media (max-width: 546px) {
   .container-footer {
-    padding: 15px;
+    margin-top: 50px;
+    height: 100px;
+    width: 240px;
+  }
+  .footer__contacts {
+    font-size: 18px;
+  }
+  .footer__tag {
+    font-size: 20px;
+  }
+  .footer__copyright {
+    height: 40px;
+    line-height: 40px;
   }
 }
 
