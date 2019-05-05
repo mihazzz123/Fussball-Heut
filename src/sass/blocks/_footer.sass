@@ -3,19 +3,31 @@
   //background: url('../img/footer-bg2.jpg') no-repeat
   //background-position: right center
   //background-size: contain
-  &-block 
-    width: 40%
-    display: flex
-    flex-direction: column
-    text-align-last: left
+  position: relative
   &__contacts
-    font-size: 24px
-    display: block
-    margin-bottom: 25px
-    color: $color-textLight
-  &__text
     font-size: 18px
-    color: $color-textLight
+    display: block
+    margin-bottom: 5px
+    color: $color-text
+    border-bottom: 1px solid $color-main
+  &__tag
+    margin: 0
+    margin-bottom: 5px
+    font-size: 20px
+    color: $color-text
+.container-footer
+  background: #ffffff99
+  box-shadow: 0 0 15px 5px $color-shadow
+  padding: 15px
+  position: absolute
+  width: 35%
+  display: flex
+  flex-direction: column
+  text-align-last: left
+  bottom: 10%
+  left: 14%
+
+  
 iframe
   width: 100%
   filter: grayscale(100%)
