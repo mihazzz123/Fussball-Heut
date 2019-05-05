@@ -476,13 +476,25 @@ input, button {
     -webkit-box-shadow: 0 0 15px 3px #ffd734;
             box-shadow: 0 0 15px 3px #ffd734;
   }
-  .slider-item:hover {
+  .slick-slide {
+    overflow: hidden;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .slick-slide:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  .slick-slide:hover .slider__item {
     opacity: 1;
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
   }
   .main__title:hover {
-    text-shadow: 1px 1px 0 #ffcd01, 1px -1px 0 #ffcd01, -1px 1px 0 #ffcd01, -1px -1px 0 #ffcd01;
+    text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000;
+  }
+  .main__title p:hover:after {
+    height: 54px;
   }
 }
 
@@ -747,17 +759,39 @@ _
 }
 
 .main__title {
-  font-family: Thirsty Script Bold;
-  color: #0f0f0f;
+  color: #ffffff;
   display: block;
   margin: 0 auto 100px auto;
   text-align: center;
   font-size: 58px;
   width: 80%;
   font-weight: 300;
-  text-shadow: 1px 1px 0 #aff1cf9e, 1px -1px 0 orange, -1px 1px 0 orange, -1px -1px 0 orange;
   -webkit-transition: all 1s;
   transition: all 1s;
+  line-height: 50px;
+  z-index: 5;
+}
+
+.main__title p {
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  z-index: 5;
+  color: red;
+}
+
+.main__title p:after {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background: #ffcd01;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .main-form {
@@ -989,7 +1023,7 @@ _
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 680px;
+  height: 600px;
   max-width: 320px;
   margin: 0;
   background: #ffffffd6;
@@ -1013,12 +1047,21 @@ _
   color: #0f0f0f;
   font-size: 23px;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .slider-item__description {
   color: #0f0f0f;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 18px;
   padding-bottom: 10px;
   max-width: 90%;
@@ -1030,13 +1073,11 @@ _
   display: block;
   font-size: 18px;
   color: #0f0f0f;
-  padding-bottom: 7px;
-  font-weight: 700;
+  padding-bottom: 15px;
   position: relative;
 }
 
 .slider-item__tag:before {
-  content: '';
   display: block;
   height: 2px;
   width: 12%;

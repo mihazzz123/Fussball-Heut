@@ -14,8 +14,7 @@
     margin-left: auto
     margin-right: auto
   &__title
-    font-family: Thirsty Script Bold
-    color: $color-text
+    color: #ffffff
     display: block
     margin: 0 auto 100px auto
     //max-width: 450px
@@ -23,8 +22,28 @@
     font-size: 58px
     width: 80%
     font-weight: 300
-    text-shadow: 1px 1px 0 #aff1cf9e, 1px -1px 0 orange, -1px 1px 0 orange, -1px -1px 0 orange
-    transition: all 1s;
+    //text-shadow: 1px 1px 0 #aff1cf9e, 1px -1px 0 orange, -1px 1px 0 orange, -1px -1px 0 orange
+    transition: all 1s
+    line-height: 50px
+    z-index: 5
+    & p 
+      display: inline-block
+      font-weight: 700
+      position: relative
+      z-index: 5
+      color: red
+      &:after
+        //content: ''
+        display: inline-block
+        height: 3px
+        width: 100%
+        background: $color-main
+        position: absolute
+        bottom: -3px
+        left: 0
+        transition: 0.5s
+        z-index: -1
+        border-radius: 10px
   &-form 
     background: #f9f8f894
     //border: 1px solid $color-main
