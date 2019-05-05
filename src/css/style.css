@@ -1048,9 +1048,10 @@ _
   background: #ffffff99;
   -webkit-box-shadow: 0 0 15px 5px #a5a5a5;
           box-shadow: 0 0 15px 5px #a5a5a5;
-  padding: 15px;
+  padding: 30px;
   position: absolute;
   width: 35%;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1067,6 +1068,12 @@ iframe {
   width: 100%;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+@media (max-width: 990px) {
+  .container-footer {
+    padding: 15px;
+  }
 }
 
 .modal-first {

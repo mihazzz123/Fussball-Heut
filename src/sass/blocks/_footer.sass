@@ -18,9 +18,10 @@
 .container-footer
   background: #ffffff99
   box-shadow: 0 0 15px 5px $color-shadow
-  padding: 15px
+  padding: 30px
   position: absolute
   width: 35%
+  max-width: 450px
   display: flex
   flex-direction: column
   text-align-last: left
@@ -31,3 +32,7 @@
 iframe
   width: 100%
   filter: grayscale(100%)
+
+@media (max-width: 990px)
+  .container-footer
+    padding: 15px
