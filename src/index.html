@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+	<!-- Шрифты-->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Собственные стили-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Fussball Heut</title>
+</head>
+<body>
+	<button id="go-top"><i class="fas fa-arrow-up"></i></button>
+	<header class="header">
+		<div class="container">
+			<div class="header-wrap">
+				<div class="header-logo">
+					<h1 class="header-logo__title">Fussball Heut</h1>
+					<!-- /.header-logo__title -->
+				</div>
+				<!-- /.header-logo -->
+				<nav class="header-nav">
+					<a href="#main" class="header-nav__item">Main</a>
+					<!-- /.header-nav__item -->
+					<a href="#offer" class="header-nav__item">Warum uns</a>
+					<!-- /.header-nav__item -->
+					<a href="#goods" class="header-nav__item">Waren</a>
+					<!-- /.header-nav__item -->
+					<a href="#footer" class="header-nav__item">Kontakt</a>
+					<!-- /.header-nav__item -->
+				</nav>
+				<!-- /.header-nav -->
+			</div>
+			<!-- /.header-wrap -->
+		</div>
+		<!-- /.container -->
+	</header>
+
+	<section id="main" class="main section">
+		<div class="container">
+			<div class="main-wrap">
+			<h2 class="title main__title">Erhalten Sie einen Bonus von -50% auf Ihren nächsten Einkauf!</h2>
+			<!-- /.title maim-title -->
+			<form action="#" method="#" id="main-form" class="main-form">
+				<small class="main-form__tag">Name*</small>
+				<!-- /.main-form__tag -->
+				<input type="text" placeholder="Your nane" class="main-form__input" data-validetta="required,minLength[2],maxLength[15]">
+				<small class="main-form__tag">E-Mail*</small>
+				<!-- /.main-form__tag -->
+				<input type="text" placeholder="Your email" class="main-form__input" data-validetta="required,email">
+				<button type="submit" id="btn1" class="button main-form__button">Info Bekommen</button>
+				<!-- /.butoon main-form__button -->
+			</form>
+			<!-- /.main-form -->
+			<span class="main__text modal-form-text">*Ihre Daten bleiben vertraulich und werden nicht an Dritte weitergegeben.</span>
+				<!-- /.modal-form-text -->
+		</div>
+		</div>
+		<!-- /.container main wrap -->
+	</section>
+	<!-- /.main -->
+
+	<section id="offer" class="section offer">
+		<div class="container">
+			<h2 class="title offer__title">WARUM UNS WÄHLEN</h2>
+			<!-- /.title offer__title -->
+			<div class="offer-wrap">
+				<div class="offer-item"><span class="offer-item__text"><i class="far fa-star"></i>Einzigartiges Design</span> <!-- /.offer-item__text --></div>
+				<!-- /.offer-item -->
+				<div class="offer-item"><span class="offer-item__text"><i class="fas fa-tag"></i>Günstige Preise</span> <!-- /.offer-item__text --></div>
+				<!-- /.offer-item -->
+				<div class="offer-item"><span class="offer-item__text"><i class="fas fa-palette"></i>Individualisierte Farben</span> <!-- /.offer-item__text --></div>
+				<!-- /.offer-item -->
+				<div class="offer-item"><span class="offer-item__text"><i class="fas fa-shopping-cart"></i>Kostenloser Versand</span> <!-- /.offer-item__text --></div>
+				<!-- /.offer-item -->
+				<div class="offer-item"><span class="offer-item__text"><i class="fas fa-euro-sign"></i>Rabatte auf Großaufträge</span> <!-- /.offer-item__text --></div>
+				<!-- /.offer-item -->
+				<div class="offer-item"><span class="offer-item__text"><i class="far fa-thumbs-up"></i>Top-Qualität</span> <!-- /.offer-item__text --></div>
+				<!-- /.offer-item -->
+			</div>
+			<!-- /.offer-wrap -->
+		</div>
+		<!-- /.comtainer -->
+	</section>
+	<!-- /.section offer -->
+
+	<section  id="goods" class="section goods">
+		<div class="container">
+			<div class="goods-wrap">
+				<div class="slider-arrows">
+					<i id="prevBtn" class="fas fa-arrow-left"></i>
+					<i id="nextBtn" class="fas fa-arrow-right"></i>
+				</div>
+				<!-- /.slider-arrows -->
+				<div id="slider" class="goods-slider">
+					
+
+					<div class="slider-item">
+						<img src="img/goods/items/Fußball.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Fußball - 55€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description"> Polyurethan Klassisches 32-flächiges Design</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">4, 5</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+					
+					<div class="slider-item">
+						<img src="img/goods/items/Fußballschuhe.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Fußballsocken – 18€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description"> 72% Polyester / 23% Nylon / 5% Elastan Atmungsaktiv</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">37-48 EU Erhältlich in vielen Farben</span>
+							</div>
+							<!-- /.slider-item__description -->
+							<button class="button slider-item__button">Bestellen</button>
+							<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Kniestrümpfe.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Kniestrümpfe - 20€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">70% Polyester+8% Spandex+8% Nylon+9% Baumwolle Erhältlich in vielen Farben</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">38-48 EU</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Fußball-Weste.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Fußball-Weste - 25€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">100% Polyester Erhältlich in vielen Farben</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">S-2XL</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Trinkflasche.png" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Trinkflasche - 25€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Farbe:</span>
+							<span class="slider-item__description">Schwarz</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">1000 ml/ 1500 ml</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Schienbeinschoner.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Schienbeinschoner - 50€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">100% Polypropylen Farbe: Schwarz - Rot</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">XS-XL EVA-Polsterung</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Kurze Fußballhosen.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Kurze Fußballhosen – 30€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">88% Polyester, 12% Elasthan Erhältlich in vielen Farben</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">S – 2XL</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Kurzarm Trainingsshirt.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Kurzarm Trainingsshirt - 30€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</>
+							<span class="slider-item__description">100% Polyester</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">S – 2XL Erhältlich in vielen Farben</span>
+					</div>
+					<!-- /.slider-item__description -->
+					<button class="button slider-item__button">Bestellen</button>
+					<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Sporttasche.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Sporttasche – 30€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Stil:</span>
+							<span class="slider-item__description">Turnbeutel</span>
+							<span class="slider-item__tag">Maße:</span>
+							<span class="slider-item__description">39 x 50 cm Erhältlich in vielen Farben</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Torwarthandschuhe.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Torwarthandschuhe - 70€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Hauptfarbe:</span>
+							<span class="slider-item__description">Rosa</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">8,5 – 12 Ortho-Tec Fingerschutz</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Fußballuniform.png" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Fußballuniform – 60€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">85% Polyester, 15% Elasthan Erhältlich in vielen Farben</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">S – 2XL</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Towart-Set.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Towart-Set – 69€ <br>Langarm Towarttrikots, Kurze Hosen</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">100% Polyester Erhältlich in vielen Farben</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">S – 2XL</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Fußballschuhe.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Fußballschuhe - 159€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Inneres Material:</span>
+							<span class="slider-item__description">Synthetik</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">39-45 EU</span>
+							<span class="slider-item__tag">Obermaterial:</span>
+							<span class="slider-item__description">Leder</span>
+							<span class="slider-item__tag">Hauptfarbe: </span>
+							<span class="slider-item__description">Schwarz</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Turnschuhe.png" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Turnschuhe – 79€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Obermaterial:</span>
+							<span class="slider-item__description">Synthetik</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">38-46 EU</span>
+							<span class="slider-item__tag">Sohle:</span>
+							<span class="slider-item__description">Rubber Erhältlich in vielen Farben</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+					<div class="slider-item">
+						<img src="img/goods/items/Kurzarm Trainingsshirt.jpg" alt="" class="slider-item__img">
+						<h4 class="slider-item__title">Kurzarm Trainingsshirt - 30€</h4>
+						<!-- /.slider-item__title -->
+						<div class="slider-item__description">
+							<span class="slider-item__tag">Material:</span>
+							<span class="slider-item__description">100% Polyester</span>
+							<span class="slider-item__tag">Größe:</span>
+							<span class="slider-item__description">S – 2XL Erhältlich in vielen Farben</span>
+						</div>
+						<!-- /.slider-item__description -->
+						<button class="button slider-item__button">Bestellen</button>
+						<!-- /.button slider-item__button -->
+					</div>
+					<!-- /.slider-item -->
+
+				</div>
+				<!-- /#slider.goods-slider -->
+			</div>
+			<!-- /.goods-wrap -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.section goods -->
+
+	<footer id="footer" class="footer">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.765431298146!2d8.650452515719065!3d50.10939737942982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd095813e03887%3A0x12812105372067ce!2sEuropa-Allee+6%2C+60327+Frankfurt+am+Main!5e0!3m2!1sde!2sde!4v1556990245884!5m2!1sde!2sde" width="auto" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<!--<div class="container">
+			<div class="footer-block">
+				<span class="footer__contacts">Contacts detals</span> <!-- /.footer__contacts -->
+				<!--<span class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolore nostrum, enim vel consequuntur nihil accusamus inventore error dolorem deserunt laborum, doloribus sapiente adipisci.</span> <!-- /.footer__text --><!--</div>
+			<!-- /.footer-block -->
+		<!--</div>-->
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer section -->
+	<div class="modal-wrap modal-wrap__disable">
+
+		<div class="modal-first">
+			<span class="modal-first__text">Danke für Ihr Interesse. Wir werden uns in Kürze bei Ihnen melden.</span> <!-- /.modal-first__text -->
+			<button id="btn1-close" class="button modal-first__button">Ok</button> <!-- /.button modal-first__button -->
+		</div>
+		<!-- /.modal-first -->
+
+		<div class="modal-second">
+			<form action="" id="modal-form" class="modal-form">
+				<small class="modal-form__tag">Name*</small>
+				<!-- /.modal-form__tag -->
+				<input type="text" placeholder="Your nane" class="modal-form__input" data-validetta="required,minLength[2],maxLength[15]">
+				<small class="modal-form__tag">E-Mail*</small>
+				<!-- /.modal-form__tag -->
+				<input type="text" placeholder="Your email" class="modal-form__input" data-validetta="required,email">
+				<button type="submit" id="btn2-close" class="button modal-form__button">Weiter</button>
+				<!-- /.butoon modal-form__button -->
+				<span class="modal-form-text">*hre Daten bleiben vertraulich und werden nicht an Dritte weitergegeben.</span>
+				<!-- /.modal-form-text -->
+			</form>
+			<!-- /.modal-form -->
+		</div>
+		<!-- /.modal-second -->
+
+		<div class="modal-third">
+				<span class="modal-third__text">Vielen Dank für Ihre Bestellung. Wir werden uns mit Ihnen in Kürze in Verbindung setzen, um die gewünschte Farbe / Größe zu erfragen.</span> <!-- /.modal-third__text -->
+				<button id="btn3-close" class="button modal-third__button">Ok</button> <!-- /.button modal-third__button -->
+		</div>
+		<!-- /.modal-third -->
+	
+	</div>
+	<!-- /.modal-wrap -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/validetta.min.js"></script>
+	<script>
+
+		//Модальные окна
+		$('#btn1').click(function () {
+			$('.modal-wrap').removeClass('modal-wrap__disable').addClass('modal-wrap__active');
+			$('.modal-first').addClass('modal-first__active');
+			if($('.modal-wrap').hasClass('modal-wrap__active')){
+				$('body').css({'overflow' : 'hidden'});
+			}else{
+				$('body').attr('style', '');
+			};
+		});
+
+		$('#btn1-close').click(function() {
+			$('.modal-first').removeClass('modal-first__active');
+			$('.modal-wrap').removeClass('modal-wrap__active').addClass('modal-wrap__disable');
+			$('body').attr('style', '');
+		});
+
+
+		$('.slider-item__button').click(function () {
+			$('.modal-wrap').removeClass('modal-wrap__disable').addClass('modal-wrap__active');
+			$('.modal-second').addClass('modal-second__active');
+			if($('.modal-wrap').hasClass('modal-wrap__active')){
+				$('body').css({'overflow' : 'hidden'});
+			}else{
+				$('body').attr('style', '');
+			};
+		});
+
+		$('#btn2-close').click(function() {
+			$('.modal-second').removeClass('modal-second__active');
+			$('.modal-third').addClass('modal-third__active');
+		});
+
+
+		$('#btn3-close').click(function () {
+			$('.modal-wrap').removeClass('modal-wrap__active').addClass('modal-wrap__disable');
+			$('.modal-third').removeClass('modal-third__active');
+			$('body').attr('style', '');
+		});
+		
+			
+
+		$(window).scroll(function () { 
+  		if($(this).scrollTop() != 0){
+			$('#go-top').fadeIn();
+			} else {
+			$('#go-top').fadeOut();
+			}
+			});
+			$('#go-top').click(function() {
+			$('body,html').animate({scrollTop:0},900);
+		});
+
+		// Валидация форм
+		$("#main-form").validetta( {
+			errorTemplateClass : 'validetta-bubble',
+			bubblePosition: 'bottom',
+			bubbleGapTop: 5,
+			bubbleGapLeft: 150
+		});
+		$("#modal-form").validetta( {
+			errorTemplateClass : 'validetta-bubble',
+			bubblePosition: 'bottom',
+			bubbleGapTop: 5,
+			bubbleGapLeft: 150
+  	});
+
+		//Сладер
+		$('#slider').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			centerMode: true,
+			centerMode: true,
+			centerPadding: '10px',
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			prevArrow: $('#prevBtn'),
+    	nextArrow: $('#nextBtn'),
+			responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2
+				}
+				},
+				{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+			]
+		});
+
+		//Scroll
+		$('.header-nav').on("click","a", function (event) {
+			//отменяем стандартную обработку нажатия по ссылке
+			event.preventDefault();
+			//забираем идентификатор бока с атрибута href
+			var id  = $(this).attr('href'),
+			//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+			//анимируем переход на расстояние - top за 1500 мс
+			$('body,html').animate({scrollTop: top}, 1000);
+		});
+
+	</script>
+</body>
+</html>

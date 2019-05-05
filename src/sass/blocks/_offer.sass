@@ -1,0 +1,39 @@
+.offer
+  background: $color-bg
+  &__title
+    margin-bottom: 50px
+    text-transform: uppercase
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 50px
+  &-item
+    display: flex
+    margin-bottom: 30px
+    flex-basis: 50%
+    //text-align: center
+    &__text
+      display: block
+      font-size: 18px
+      width: 240px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      & i
+        margin-right: 10px
+        font-size: 20px
+      &:before
+        content: ''
+        position: absolute
+        height: 3px
+        width: 90%
+        bottom: -10px
+        display: block
+        background: $color-main
+
+@media (max-width: 768px)
+  .offer-item
+    flex-basis: 100%
+    margin-bottom: 50px
+

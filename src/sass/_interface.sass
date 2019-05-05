@@ -1,0 +1,80 @@
+*
+  box-sizing: border-box
+  font-size: 14px
+  font-family: 'PT Sans', sans-serif
+  color: $color-text
+  transition: 0.4s
+
+body
+  position: relative
+
+#go-top
+  display: none
+  width: 50px
+  height: 50px
+  position: fixed
+  bottom: 20px
+  right: 5%
+  z-index: 9999
+  border-radius: 50%
+  border: 0
+  box-shadow: 0 0 30px 10px #555555
+  padding: 0
+  background-color: 0
+  opacity: 0.25
+  transform: 0.4s
+  & i
+    font-size: 34px
+
+
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto 0 auto
+
+.section
+  padding-top: 50px
+  padding-bottom: 50px
+
+.title
+  text-align: center
+  font-size: 30px
+
+
+input, button
+  outline: none
+
+.button
+  background: $color-main
+  padding: 20px 20px
+  border: none
+  border-radius: 5px
+
+
+// HOVER
+@media (min-width: 1024px)
+  .header-nav__item:hover
+    &:before
+      width: 100%
+      transition: 0.4s
+      right: 0
+  #go-top
+    display: block
+  #go-top:hover
+    opacity: 0.8
+
+
+// Адаптив
+@media (max-width: 1200px)
+  .container
+    max-width: 990px
+@media (max-width: 992px)
+  .container
+    max-width: 760px
+@media (max-width: 768px)
+  .container
+    max-width: 540px
+@media (max-width: 544px)
+  .container
+    max-width: 310px
+
