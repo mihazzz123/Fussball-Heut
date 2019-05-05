@@ -476,6 +476,11 @@ input, button {
     -webkit-box-shadow: 0 0 15px 3px #ffd734;
             box-shadow: 0 0 15px 3px #ffd734;
   }
+  .slider-item:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -614,10 +619,14 @@ _
 
 .header {
   background-color: #d8d8d8;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  position: fixed;
   width: 100%;
   margin: 0 auto;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 99999;
 }
 
 .header-wrap {
@@ -706,6 +715,7 @@ _
   background-color: #000000;
   background-size: contain;
   background-position: left bottom;
+  padding-top: 180px;
 }
 
 .main-wrap {
@@ -959,16 +969,18 @@ _
   height: 650px;
   max-width: 320px;
   margin: 0 10px 0 10px;
-  -webkit-box-shadow: 0 0 10px 3px #a5a5a5;
-          box-shadow: 0 0 10px 3px #a5a5a5;
   background: #ffffffd6;
   position: relative;
   opacity: 0.95;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .slider-item__img {
   width: 100%;
-  height: 260px;
+  height: auto;
   display: block;
   overflow: hidden;
 }
@@ -1076,17 +1088,17 @@ _
 }
 
 .footer__contacts {
-  font-size: 18px;
+  font-size: 22px;
   display: block;
   margin-bottom: 5px;
   color: #0f0f0f;
-  border-bottom: 1px solid #ffcd01;
 }
 
 .footer__tag {
+  border-bottom: 1px solid #ffcd01;
   margin: 0;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 24px;
   color: #0f0f0f;
 }
 
@@ -1094,7 +1106,7 @@ _
   display: block;
   margin-top: 10px;
   color: grey;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .container-footer {
@@ -1115,6 +1127,13 @@ _
           flex-direction: column;
   text-align-last: left;
   bottom: 5%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 iframe {

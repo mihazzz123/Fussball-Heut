@@ -1,10 +1,12 @@
 .header
   background-color: $color-bg
-  padding-top: 20px
-  padding-bottom: 30px
-  //position: fixed
+  padding-top: 15px
+  padding-bottom: 25px
+  position: fixed
   width: 100%
   margin: 0 auto
+  transition: all 0.4s ease;
+  z-index: 99999
   &-wrap 
     //height: 100px
     padding-left: 5%
@@ -37,8 +39,7 @@
         position: absolute
         height: 2px
         width: 0
-        background: $color-main
-
+        background: $color-main  
 
 //  Адаптив
 @media (max-width: 990px)
