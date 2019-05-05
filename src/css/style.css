@@ -674,6 +674,15 @@ _
   background: #ffcd01;
 }
 
+@media (max-width: 990px) {
+  .header-logo__title {
+    font-size: 28px;
+  }
+  .header-nav__item {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .header-nav {
     display: none;
