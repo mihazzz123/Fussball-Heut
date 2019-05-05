@@ -1,8 +1,10 @@
 .header
-  background-color: $color-bg
-  padding-top: 15px
-  padding-bottom: 25px
+  background-color: #d8d8d899
+  padding-top: 10px
+  padding-bottom: 15px
   position: fixed
+  top: 0
+  left: 0
   width: 100%
   margin: 0 auto
   transition: all 0.4s ease;
@@ -17,7 +19,7 @@
   &-logo
     flex-basis: 30%
     &__title
-      font-family: Thirsty Script Bold;
+      font-family: Thirsty Script Bold
       display: block
       margin: 0
       font-size: 34px
@@ -40,6 +42,9 @@
         height: 2px
         width: 0
         background: $color-main  
+
+.sticky
+  background: $color-bg
 
 //  Адаптив
 @media (max-width: 990px)

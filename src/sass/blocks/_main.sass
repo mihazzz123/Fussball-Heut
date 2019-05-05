@@ -1,10 +1,10 @@
 .main
-  background-image: url('../img/main/main-bg2.png')
+  background-image: url('../img/main/main-bg2.jpg')
   background-repeat: no-repeat
   background-color: #000000
-  background-size: contain
-  background-position: left bottom
-  padding-top: 180px 
+  background-size: cover
+  background-position: center bottom
+  padding-top: 150px 
   &-wrap
     display: flex
     flex-direction: column
@@ -12,13 +12,19 @@
     align-items: center
     max-width: 400px
     margin-left: auto
+    margin-right: auto
   &__title
-    color: #fff
-    margin: 0 auto 70px auto
+    font-family: Thirsty Script Bold
+    color: $color-text
+    display: block
+    margin: 0 auto 40px auto
     //max-width: 450px
     text-align: center
-    font-size: 42px
+    font-size: 58px
     width: 80%
+    font-weight: 300
+    text-shadow: 1px 1px 0 #aff1cf9e, 1px -1px 0 orange, -1px 1px 0 orange, -1px -1px 0 orange
+    transition: all 1s;
   &-form 
     background: #f9f8f894
     //border: 1px solid $color-main
