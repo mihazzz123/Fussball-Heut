@@ -1009,8 +1009,9 @@ _
 }
 
 .slider-item__title {
+  padding: 0 5px;
   color: #0f0f0f;
-  font-size: 24px;
+  font-size: 23px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
