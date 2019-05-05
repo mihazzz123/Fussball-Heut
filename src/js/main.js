@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
   	//Модальные окна
-		$('#btn1').click(function () {
-			$('.modal-wrap').removeClass('modal-wrap__disable').addClass('modal-wrap__active');
-			$('.modal-first').addClass('modal-first__active');
-			if($('.modal-wrap').hasClass('modal-wrap__active')){
+	  //$('#btn1').click(function () {
+			//$('.modal-wrap').removeClass('modal-wrap__disable').addClass('modal-wrap__active');
+			//$('.modal-first').addClass('modal-first__active');
+			/*if($('.modal-wrap').hasClass('modal-wrap__active')){
 				$('body').css({'overflow' : 'hidden'});
 			}else{
 				$('body').attr('style', '');
 			};
-		});
+		});*/
 
 		$('#btn1-close').click(function() {
 			$('.modal-first').removeClass('modal-first__active');
@@ -121,7 +121,8 @@ $(document).ready(function () {
 		}).done(function() {
 			$(this).find("input").val("");
 			$("form").trigger("reset");
-				alert('Спасибо! Заявка отправлена.');
+      $('.modal-wrap').removeClass('modal-wrap__disable').addClass('modal-wrap__active');
+			$('.modal-first').addClass('modal-first__active');
 		});
 		return false;
 		});
