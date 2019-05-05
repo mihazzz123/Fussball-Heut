@@ -47,13 +47,13 @@
 			<div class="main-wrap">
 			<h2 class="title main__title">Erhalten Sie einen Bonus von -50% auf Ihren nächsten Einkauf!</h2>
 			<!-- /.title maim-title -->
-			<form action="#" method="#" id="main-form" class="main-form">
+			<form method=POST id="main-form" class="main-form">
 				<small class="main-form__tag">Name*</small>
 				<!-- /.main-form__tag -->
-				<input type="text" placeholder="Your nane" class="main-form__input" data-validetta="required,minLength[2],maxLength[15]">
+				<input type="text" name="user_name" placeholder="Your nane" class="main-form__input" data-validetta="required,minLength[2],maxLength[15]">
 				<small class="main-form__tag">E-Mail*</small>
 				<!-- /.main-form__tag -->
-				<input type="text" placeholder="Your email" class="main-form__input" data-validetta="required,email">
+				<input type="text" name="user_mail" placeholder="Your email" class="main-form__input" data-validetta="required,email">
 				<button type="submit" id="btn1" class="button main-form__button">Info Bekommen</button>
 				<!-- /.butoon main-form__button -->
 			</form>
@@ -357,7 +357,7 @@
 	<!-- /.section goods -->
 
 	<footer id="footer" class="footer">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.765431298146!2d8.650452515719065!3d50.10939737942982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd095813e03887%3A0x12812105372067ce!2sEuropa-Allee+6%2C+60327+Frankfurt+am+Main!5e0!3m2!1sde!2sde!4v1556990245884!5m2!1sde!2sde" width="auto" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.765431298146!2d8.650452515719065!3d50.10939737942982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd095813e03887%3A0x12812105372067ce!2sEuropa-Allee+6%2C+60327+Frankfurt+am+Main!5e0!3m2!1sde!2sde!4v1556990245884!5m2!1sde!2sde" width="auto" height="500" filter="grayscale(100%)" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<!--<div class="container">
 			<div class="footer-block">
 				<span class="footer__contacts">Contacts detals</span> <!-- /.footer__contacts -->
@@ -376,13 +376,14 @@
 		<!-- /.modal-first -->
 
 		<div class="modal-second">
-			<form action="" id="modal-form" class="modal-form">
+			<form method="POST" id="modal-form" class="modal-form">
+				<a class="modal-form__btn-close" id="close" href="#"><i class="fas fa-times"></i></a>				
 				<small class="modal-form__tag">Name*</small>
 				<!-- /.modal-form__tag -->
-				<input type="text" placeholder="Your nane" class="modal-form__input" data-validetta="required,minLength[2],maxLength[15]">
+				<input type="text" name="user_name" placeholder="Your nane" class="modal-form__input" data-validetta="required,minLength[2],maxLength[15]">
 				<small class="modal-form__tag">E-Mail*</small>
 				<!-- /.modal-form__tag -->
-				<input type="text" placeholder="Your email" class="modal-form__input" data-validetta="required,email">
+				<input type="text" name="user_mail" placeholder="Your email" class="modal-form__input" data-validetta="required,email">
 				<button type="submit" id="btn2-close" class="button modal-form__button">Weiter</button>
 				<!-- /.butoon modal-form__button -->
 				<span class="modal-form-text">*hre Daten bleiben vertraulich und werden nicht an Dritte weitergegeben.</span>
@@ -446,8 +447,13 @@
 			$('body').attr('style', '');
 		});
 		
+		$('#close').click(function () {
+			$('.modal-wrap').removeClass('modal-wrap__active').addClass('modal-wrap__disable');
+			$('.modal-second').removeClass('modal-second__active');
+			$('body').attr('style', '');
+		});
 			
-
+		//Кнопка на верх
 		$(window).scroll(function () { 
   		if($(this).scrollTop() != 0){
 			$('#go-top').fadeIn();
@@ -511,6 +517,19 @@
 			top = $(id).offset().top;
 			//анимируем переход на расстояние - top за 1500 мс
 			$('body,html').animate({scrollTop: top}, 1000);
+		});
+
+		$("form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$("form").trigger("reset");
+																alert('Спасибо! Заявка отправлена.');
+		});
+		return false;
 		});
 
 	</script>

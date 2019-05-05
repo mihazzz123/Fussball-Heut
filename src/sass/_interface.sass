@@ -1,4 +1,4 @@
-*
+git *
   box-sizing: border-box
   font-size: 14px
   font-family: 'PT Sans', sans-serif
@@ -49,7 +49,7 @@ input, button
   padding: 20px 20px
   border: none
   border-radius: 5px
-
+  cursor: pointer
 
 // HOVER
 @media (min-width: 1024px)
@@ -58,10 +58,14 @@ input, button
       width: 100%
       transition: 0.4s
       right: 0
+      bottom: -3px
   #go-top
     display: block
   #go-top:hover
     opacity: 0.8
+  .button:hover
+    background: lighten($color-main, 10%)
+    box-shadow: 0 0 15px 3px lighten($color-main, 10%)
 
 
 // Адаптив

@@ -392,7 +392,7 @@ template {
   font-display: swap;
 }
 
-* {
+git * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 14px;
@@ -454,6 +454,7 @@ input, button {
   padding: 20px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -462,12 +463,18 @@ input, button {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     right: 0;
+    bottom: -3px;
   }
   #go-top {
     display: block;
   }
   #go-top:hover {
     opacity: 0.8;
+  }
+  .button:hover {
+    background: #ffd734;
+    -webkit-box-shadow: 0 0 15px 3px #ffd734;
+            box-shadow: 0 0 15px 3px #ffd734;
   }
 }
 
@@ -753,6 +760,7 @@ _
 }
 
 .main__text {
+  color: #ffffff;
   margin-top: 40px;
   margin-bottom: 70px;
 }
@@ -963,6 +971,8 @@ _
 
 iframe {
   width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .modal-first {
@@ -987,8 +997,8 @@ iframe {
   -webkit-box-shadow: 0 0 20px 10px #a5a5a5;
           box-shadow: 0 0 20px 10px #a5a5a5;
   border-radius: 5px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .modal-first__text {
@@ -1030,13 +1040,15 @@ iframe {
       -ms-flex-pack: center;
           justify-content: center;
   background: #ffffffd3;
-  padding: 0 40px 40px 40px;
+  padding: 30px 40px 40px 40px;
   -webkit-box-shadow: 0 0 20px 10px #a5a5a5;
           box-shadow: 0 0 20px 10px #a5a5a5;
   border-radius: 5px;
+  position: relative;
 }
 
 .modal-form__tag {
+  display: block;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1053,13 +1065,28 @@ iframe {
   border: 1px solid grey;
 }
 
-.modal-form__input:nth-child(4) {
+.modal-form__input:nth-child(5) {
   margin-bottom: 40px;
 }
 
 .modal-form__button {
   margin-bottom: 30px;
   font-size: 24px;
+}
+
+.modal-form__btn-close {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: block;
+}
+
+.modal-form__btn-close i {
+  font-size: 26px;
+  color: #0f0f0f;
 }
 
 .modal-third {
@@ -1104,10 +1131,10 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: modal 0.5s ease forwards;
-          animation: modal 0.5s ease forwards;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-animation: modal 0.2s ease forwards;
+          animation: modal 0.2s ease forwards;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   overflow: hidden;
 }
 
@@ -1148,20 +1175,20 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-animation: modal2 0.5s ease forwards;
-          animation: modal2 0.5s ease forwards;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-animation: modal2 0.2s ease forwards;
+          animation: modal2 0.2s ease forwards;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @-webkit-keyframes modal2 {
   0% {
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 0%;
   }
   100% {
-    top: 30%;
+    top: 25%;
     left: 30%;
     width: 44%;
   }
@@ -1169,12 +1196,12 @@ iframe {
 
 @keyframes modal2 {
   0% {
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 0%;
   }
   100% {
-    top: 30%;
+    top: 25%;
     left: 30%;
     width: 44%;
   }
@@ -1184,10 +1211,10 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: modal3 0.5s ease forwards;
-          animation: modal3 0.5s ease forwards;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-animation: modal3 0.2s ease forwards;
+          animation: modal3 0.2s ease forwards;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   overflow: hidden;
 }
 
